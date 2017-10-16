@@ -81,3 +81,4 @@ def send_email():
 			notifications.append("You email was not sent. Please try again later")
 
 	return render_template("contact.html", notifications=notifications)
+
