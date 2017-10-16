@@ -1,3 +1,50 @@
+footer {
+	position: fixed;
+	right:0;
+	bottom: 0;
+	font-style: italic;
+}
+
+header {
+	font-size: 125%;
+}
+
+#index_body {
+	background: url("/static/img/background.jpg");
+	font-size: 115%;
+}
+#about_body {
+	background: url("/static/img/background1.jpg");
+	font-size: 115%;
+}
+#contact_body {
+	background: url("/static/img/background2.png");
+	font-size: 115%;
+}
+
 h1 {
-	color: blue;
+	font-size:400%;
+	color:purple;
+	font-family:serif;
+}
+
+.blog {
+	font-family: fantasy;
+	font-size: 150%;
+}
+
+/*#alert {
+	text-align: center;
+	font-size: 200%;
+	color: yellow;
+}*/
+
+#contactForm {
+	color: yellow;
+}
+
+#alert {
+	text-align: center;
+	font-size: 200%;
+	color: yellow;
 }
