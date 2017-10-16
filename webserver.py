@@ -28,24 +28,24 @@ def about():
 def contact():
 	return render_template("contact.html")
 
-@app.route('/m1')
+@app.route('/blog/8-experiments-in-motivation ')
 def m1():
 	return render_template("m1.html")
 
 
-@app.route('/m2')
+@app.route('/blog/a-mindful-shift-of-focus')
 def m2():
 	return render_template("m2.html")
 
-@app.route('/m3')
+@app.route('/blog/how-to-develop-an-awesome-sense-of-direction')
 def m3():
 	return render_template("m3.html")
 
-@app.route('/m4')
+@app.route('/blog/training-to-be-a-good-writer')
 def m4():
 	return render_template("m4.html")
 
-@app.route('/m5')
+@app.route('/blog/what-productivity-systems-wont-solve ')
 def m5():
 	return render_template("m5.html")
 
@@ -81,4 +81,3 @@ def send_email():
 			notifications.append("You email was not sent. Please try again later")
 
 	return render_template("contact.html", notifications=notifications)
-
