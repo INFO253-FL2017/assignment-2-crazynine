@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+	</head>
+	<body id="contact_body">
+		<header>
+		<!-- <div id="alert"> -->
+			<!-- Where the calculator answer will be displayed -->
+		</div>
+			<a href="/">Home</a>
+			<a href="/about">Abous Us</a>
+			<a href="/contact">Contact Us</a>
+		</header>
+		<ul id="alert">
+    		{% for notification in notifications %}
+    		<li>{{ notification }}</li>
+   			{% endfor %}
+		</ul>
+		<form action="/contact" method="post" id="contactForm">
+			<table>
+				<tr>
+					<td align="right">Name:</td>
+					<td align="left"><input type="text", name="name", id="name", label="name" /></td>
+				</tr>
+				<tr>
+					<td align="right">subject:</td>
+					<td align="left"><input type="text", name="subject", id="subject" /></td>
+				</tr>
+				<tr>
+					<td align="right">message:</td>
+					<td align="left"><input type="text", name ="message", id="message", style="width:400px;height:200px;" /></td>
+				</tr>
+				<tr>
+					<td align="right"><input type="submit", value="submit" /></td>
+				</tr>
+			</table>
+			<!-- Add a text field to capture the calculator expression and add a submit button called "Calculate" -->
+
+		</form>
+		<br />
+
+		<script type="text/javascript" src="/static/js/script.js"></script>
+		<footer>
+			<a href="/">Home</a>
+			<a href="/about">Abous Us</a>
+			<a href="/contact">Contact Us</a>
+		</footer>
+
+	</body>
+</html>
