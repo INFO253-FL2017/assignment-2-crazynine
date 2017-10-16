@@ -28,7 +28,7 @@ def about():
 def contact():
 	return render_template("contact.html")
 
-@app.route('/blog/8-experiments-in-motivation ')
+@app.route('/blog/8-experiments-in-motivation')
 def m1():
 	return render_template("m1.html")
 
@@ -45,7 +45,7 @@ def m3():
 def m4():
 	return render_template("m4.html")
 
-@app.route('/blog/what-productivity-systems-wont-solve ')
+@app.route('/blog/what-productivity-systems-wont-solve')
 def m5():
 	return render_template("m5.html")
 
@@ -81,4 +81,3 @@ def send_email():
 			notifications.append("You email was not sent. Please try again later")
 
 	return render_template("contact.html", notifications=notifications)
-
