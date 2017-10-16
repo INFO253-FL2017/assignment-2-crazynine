@@ -5,6 +5,7 @@ File that is the central location of code for your webserver.
 """
 import requests
 import os
+
 from flask import Flask, request, render_template
 
 # Create application, and point static path (where static resources like images, css, and js files are stored) to the
